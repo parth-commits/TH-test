@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "ManropeLight";
+    src: url("../assets/fonts/Manrope-Light.ttf") format("truetype");
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+}
