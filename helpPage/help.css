@@ -75,3 +75,23 @@ html{
         transform: translateY(0px) rotate(180deg);
     }
 }
+#help-page-scan-img {
+    width: 90px;
+    height: 90px;
+}
+#help-page-scan {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    position: relative;
+    bottom: 0px;
+}
+#qrtext {
+    font-size: 15px;
+    color: #f9f5db;
+}
+
+.inline-images {
+    height: 22px;
+    width: 22px;
+}
