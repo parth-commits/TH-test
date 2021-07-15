@@ -13,3 +13,69 @@ html{
 ::-webkit-scrollbar {
     display: none;
 }
+@keyframes opacityFadeIn { 
+    from { 
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#landing-page {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background-color: #ca2840;
+    overflow: hidden;
+}
+
+#app-title {
+    color: #ffffff;
+    margin: auto;
+    width: fit-content;
+    font-size: 70px;
+    padding-top: 0px;
+    text-align: center;
+    font-family: "Brush Script MT";
+}
+#landing-img {
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    background-color: transparent;
+    margin-top: 30px;
+    position: relative;
+}
+#landing-img-img {
+    height: 120px;
+    width: 120px;
+}
+
+.landing-buttons {
+    width: 65px;
+    animation: opacityFadeIn 0.5s ease-in;
+}
+.landing-buttons-list {
+    display: inline;
+    width: fit-content;
+    margin: auto;
+}
+.landing-buttons-list li {
+    display: inline;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+}
+#landing-buttons-div {
+    width: fit-content;
+    margin: auto;
+    margin-top: 5px;
+    padding-top: 5px;
+    border-radius: 35px;
+}
+.links {
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+}
