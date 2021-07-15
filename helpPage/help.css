@@ -13,6 +13,15 @@ html{
 ::-webkit-scrollbar {
     display: none;
 }
+
+@keyframes opacityFadeIn { 
+    from { 
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 #main-help-page {
     width: 360px;
     height: 360px;
@@ -32,6 +41,8 @@ html{
     position: relative;
     scroll-snap-align: start;
     scroll-snap-points-x: repeat(360px);
+    animation: opacityFadeIn 0.5s ease-in;
+    user-select: none;
 }
 .help-button {
     width: 60px;

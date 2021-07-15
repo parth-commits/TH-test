@@ -28,6 +28,7 @@ html{
     border-radius: 50%;
     background-color: #ca2840;
     overflow: hidden;
+    user-select: none;
 }
 
 #app-title {
@@ -38,6 +39,7 @@ html{
     padding-top: 0px;
     text-align: center;
     font-family: "Brush Script MT";
+    animation: opacityFadeIn 0.5s ease-in;
 }
 #landing-img {
     height: 120px;
@@ -46,6 +48,7 @@ html{
     background-color: transparent;
     margin-top: 30px;
     position: relative;
+    animation: opacityFadeIn 0.5s ease-in;
 }
 #landing-img-img {
     height: 120px;
