@@ -43,6 +43,7 @@ html{
     margin: auto;
     width: 360px;
     text-align: center;
+    animation: opacityFadeIn 0.5s ease-in;
     color: #f9f5db;
 }
 #input-box {
@@ -58,6 +59,7 @@ html{
     border-radius: 10px;
     background-color: #f9f5db;
     font-size: 30px;
+    animation: opacityFadeIn 0.5s ease-in;
     font-family: "ManropeMedium";
     color: #ca2840;
     text-overflow: clip;
@@ -68,6 +70,7 @@ html{
     margin: auto;
     position: absolute;
     left: 145px;
+    animation: opacityFadeIn 0.5s ease-in;
     bottom: 10px;
     cursor: pointer;
 }
@@ -77,6 +80,7 @@ html{
     position: relative;
     top: 65px;
     margin: auto;
+    animation: opacityFadeIn 0.5s ease-in;
     width: 360px;
     text-align: center;
     color: #f9f5db;
@@ -89,6 +93,7 @@ html{
     color: #f9f5db;
     position: relative;
     line-height: 20px;
+    animation: opacityFadeIn 0.5s ease-in;
     font-size: 15px;
     font-family: "ManropeMedium";
     top: 70px;
