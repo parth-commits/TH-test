@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "ManropeMedium";
+    src: url("../assets/fonts/Manrope-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "ManropeBold";
+    src: url("../assets/fonts/Manrope-Bold.ttf") format("truetype");
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes opacityFadeIn { 
+    from { 
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#input-page {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background-color: #ca2840;
+    user-select: none;
+    overflow: hidden;
+    position: relative;
+    scroll-snap-type: y mandatory;
+}
+#info-text {
+    font-family: "ManropeMedium";
+    position: relative;
+    top: 50px;
+    margin: auto;
+    width: 360px;
+    text-align: center;
+    color: #f9f5db;
+}
+#input-box {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    left: 30px;
+    top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0px solid rgb(153, 24, 24);
+    border-radius: 10px;
+    background-color: #f9f5db;
+    font-size: 30px;
+    font-family: "ManropeMedium";
+    color: #ca2840;
+    text-overflow: clip;
+}
+#ok-button {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    position: absolute;
+    left: 145px;
+    bottom: 10px;
+    cursor: pointer;
+}
+#output-title {
+    font-family: "ManropeBold";
+    font-size: 17px;
+    position: relative;
+    top: 65px;
+    margin: auto;
+    width: 360px;
+    text-align: center;
+    color: #f9f5db;
+}
+#output-text {
+    width: 295px;
+    height: 70px;
+    background-color: transparent;
+    margin: auto;
+    color: #f9f5db;
+    position: relative;
+    line-height: 20px;
+    font-size: 15px;
+    font-family: "ManropeMedium";
+    top: 70px;
+    text-align: center;
+    word-wrap: break-word
+}
