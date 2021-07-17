@@ -2,6 +2,10 @@
     font-family: "ManropeLight";
     src: url("../assets/fonts/Manrope-Light.ttf") format("truetype");
 }
+@font-face {
+    font-family: "specialCursive";
+    src: url("../assets/fonts/brushScriptMt.ttf") format("truetype");
+}
 html{
     scroll-behavior: smooth;
 }
@@ -38,7 +42,7 @@ html{
     font-size: 70px;
     padding-top: 0px;
     text-align: center;
-    font-family: "Brush Script MT";
+    font-family: "specialCursive";
     animation: opacityFadeIn 0.5s ease-in;
 }
 #landing-img {

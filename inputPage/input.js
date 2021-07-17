@@ -20,8 +20,8 @@ function outputText(inputText) {
             inputText = inputText.replaceAt(i, "|");
         }
     }
-    console.log(inputText);
-    return inputText;
+    console.log(inputText.toUpperCase());
+    return inputText.toUpperCase();
 }
 
 // personal replace function
