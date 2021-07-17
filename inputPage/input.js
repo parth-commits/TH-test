@@ -6,7 +6,8 @@ function saveAndExit() {
 
 // max 32 chars
 function myInput(){
-    let y = outputText(document.getElementById('input-box').value);
+    let str = document.getElementById('input-box').value;
+    let y = outputText(str.replace(/\s/g,''));
     document.getElementById('output-text').innerHTML = y;
     theCodeText = y;
 }
