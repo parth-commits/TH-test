@@ -3,25 +3,30 @@ function toInfo() {
     document.location.href = "../helpPage/help.html";
 }
 let cardNumber = '';
-// let codeText = '0463000019940553991231|3765C1D6E684E41C0D2D0176C6F90211|EF86591F640680FF44E5E482B1CB9421';
 
 function addQRCode() {
-    let qrcode = new QRCode(document.getElementById("code"), {
-        width : 230,
-        height : 230
-    });
-    
-    function makeCode () {
-        qrcode.makeCode(cardNumber);
-    }
+    // will automatically take the smallest size that can fit the data
+    var typeNumber = 0;
+    // lowest error correction level since we dont need error correction since its a watch app.
+    var errorCorrectionLevel = 'L';
+    var qr = qrcode(typeNumber, errorCorrectionLevel);
+    qr.addData(cardNumber);
+    qr.make();
+
+    // ( eachDotSize=6, marginSize=4)
+    document.getElementById('code').innerHTML = qr.createSvgTag(6, 4);
+
+    // makes it fit entire screen
+    document.getElementById('code').childNodes[0].setAttribute("width", "230px");
+    document.getElementById('code').childNodes[0].setAttribute("height", "230px");
+
+    // turns everything else off
     let cardHolder = document.getElementById("qrcode-holder");
     cardHolder.style.backgroundColor = "white";
     myRemove(document.getElementById("no-code"));
     myRemove(document.getElementById("help-button"));
     
-    makeCode();
 }
-//addQRCode();
 
 function myRemove(elem) {
     elem.parentNode.removeChild(elem);
